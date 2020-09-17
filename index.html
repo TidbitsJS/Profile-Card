@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <h1>Profile Card</h1>
+    <div class="container">
+      <div class="wrapper">
+        <a href="#">
+          <img
+            src="https://images.unsplash.com/photo-1586613802872-9d2cd9bc595c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=345&q=80"
+            alt=""
+          />
+        </a>
+        <div class="title">Sherlock Holmes</div>
+        <div class="place">London, United Kingdom</div>
+        <div class="content">
+          <p>
+            User Interface Designer and <br />
+            Web developer
+          </p>
+          <div class="buttons">
+            <div class="btn">
+              <button>Message</button>
+            </div>
+            <div class="btn">
+              <button>Following</button>
+            </div>
+          </div>
+        </div>
+        <div class="icons">
+          <li>
+            <a href="#"><span class="fab fa-whatsapp"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="fab fa-instagram"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="fab fa-github"></span></a>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const img = document.querySelector("img");
+      console.log(img);
+
+      img.addEventListener("click", () => {
+        console.log("Hello");
+        img.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
